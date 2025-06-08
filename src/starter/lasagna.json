@@ -3,77 +3,92 @@
     {
       "name": "Lasagna noodles",
       "quantity": "1 pound",
-      "required": true
+      "required": true,
+      "isForMoreThanOnePerson": true
     },
     {
       "name": "Ground beef",
       "quantity": "1 pound",
-      "required": true
+      "required": true,
+      "isForMoreThanOnePerson": true
     },
     {
       "name": "Onion, diced",
       "quantity": "1 medium",
-      "required": true
+      "required": true,
+      "isForMoreThanOnePerson": true
     },
     {
       "name": "Garlic, minced",
       "quantity": "2 cloves",
-      "required": true
+      "required": true,
+      "isForMoreThanOnePerson": true
     },
     {
       "name": "Tomato sauce",
       "quantity": "24 ounces",
-      "required": true
+      "required": true,
+      "isForMoreThanOnePerson": true
     },
     {
       "name": "Crushed tomatoes",
       "quantity": "14 ounces",
-      "required": true
+      "required": true,
+      "isForMoreThanOnePerson": true
     },
     {
       "name": "Tomato paste",
       "quantity": "2 tablespoons",
-      "required": true
+      "required": true,
+      "isForMoreThanOnePerson": true
     },
     {
       "name": "Dried basil",
       "quantity": "2 teaspoons",
-      "required": true
+      "required": true,
+      "isForMoreThanOnePerson": true
     },
     {
       "name": "Dried oregano",
       "quantity": "1 teaspoon",
-      "required": true
+      "required": true,
+      "isForMoreThanOnePerson": true
     },
     {
       "name": "Salt",
       "quantity": "1 teaspoon",
-      "required": true
+      "required": true,
+      "isForMoreThanOnePerson": true
     },
     {
       "name": "Black pepper",
       "quantity": "1/2 teaspoon",
-      "required": true
+      "required": true,
+      "isForMoreThanOnePerson": true
     },
     {
       "name": "Ricotta cheese",
       "quantity": "15 ounces",
-      "required": true
+      "required": true,
+      "isForMoreThanOnePerson": true
     },
     {
       "name": "Egg",
       "quantity": "1 large",
-      "required": true
+      "required": true,
+      "isForMoreThanOnePerson": false
     },
     {
       "name": "Mozzarella cheese, shredded",
       "quantity": "3 cups",
-      "required": true
+      "required": true,
+      "isForMoreThanOnePerson": true
     },
     {
       "name": "Parmesan cheese, grated",
       "quantity": "3/4 cup",
-      "required": true
+      "required": true,
+      "isForMoreThanOnePerson": true
     }
   ]
 }

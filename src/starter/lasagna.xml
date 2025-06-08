@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lasagna>
+  <ingredients>
+    <ingredient>
+      <name>Lasagna noodles</name>
+      <quantity>1 pound</quantity>
+      <required>true</required>
+      <isForMoreThanOnePerson>true</isForMoreThanOnePerson>
+    </ingredient>
+    <ingredient>
+      <name>Ground beef</name>
+      <quantity>1 pound</quantity>
+      <required>true</required>
+      <isForMoreThanOnePerson>true</isForMoreThanOnePerson>
+    </ingredient>
+    <ingredient>
+      <name>Onion, diced</name>
+      <quantity>1 medium</quantity>
+      <required>true</required>
+      <isForMoreThanOnePerson>true</isForMoreThanOnePerson>
+    </ingredient>
+    <ingredient>
+      <name>Garlic, minced</name>
+      <quantity>2 cloves</quantity>
+      <required>true</required>
+      <isForMoreThanOnePerson>true</isForMoreThanOnePerson>
+    </ingredient>
+    <ingredient>
+      <name>Tomato sauce</name>
+      <quantity>24 ounces</quantity>
+      <required>true</required>
+      <isForMoreThanOnePerson>true</isForMoreThanOnePerson>
+    </ingredient>
+    <ingredient>
+      <name>Crushed tomatoes</name>
+      <quantity>14 ounces</quantity>
+      <required>true</required>
+      <isForMoreThanOnePerson>true</isForMoreThanOnePerson>
+    </ingredient>
+    <ingredient>
+      <name>Tomato paste</name>
+      <quantity>2 tablespoons</quantity>
+      <required>true</required>
+      <isForMoreThanOnePerson>true</isForMoreThanOnePerson>
+    </ingredient>
+    <ingredient>
+      <name>Dried basil</name>
+      <quantity>2 teaspoons</quantity>
+      <required>true</required>
+      <isForMoreThanOnePerson>true</isForMoreThanOnePerson>
+    </ingredient>
+    <ingredient>
+      <name>Dried oregano</name>
+      <quantity>1 teaspoon</quantity>
+      <required>true</required>
+      <isForMoreThanOnePerson>true</isForMoreThanOnePerson>
+    </ingredient>
+    <ingredient>
+      <name>Salt</name>
+      <quantity>1 teaspoon</quantity>
+      <required>true</required>
+      <isForMoreThanOnePerson>true</isForMoreThanOnePerson>
+    </ingredient>
+    <ingredient>
+      <name>Black pepper</name>
+      <quantity>1/2 teaspoon</quantity>
+      <required>true</required>
+      <isForMoreThanOnePerson>true</isForMoreThanOnePerson>
+    </ingredient>
+    <ingredient>
+      <name>Ricotta cheese</name>
+      <quantity>15 ounces</quantity>
+      <required>true</required>
+      <isForMoreThanOnePerson>true</isForMoreThanOnePerson>
+    </ingredient>
+    <ingredient>
+      <name>Egg</name>
+      <quantity>1 large</quantity>
+      <required>true</required>
+      <isForMoreThanOnePerson>false</isForMoreThanOnePerson>
+    </ingredient>
+    <ingredient>
+      <name>Mozzarella cheese, shredded</name>
+      <quantity>3 cups</quantity>
+      <required>true</required>
+      <isForMoreThanOnePerson>true</isForMoreThanOnePerson>
+    </ingredient>
+    <ingredient>
+      <name>Parmesan cheese, grated</name>
+      <quantity>3/4 cup</quantity>
+      <required>true</required>
+      <isForMoreThanOnePerson>true</isForMoreThanOnePerson>
+    </ingredient>
+  </ingredients>
+</lasagna>
