@@ -30,6 +30,6 @@ const john: Employee = {
     state: 'CA',
   },
   workPhone: '123-456-7890',
-  workEmail: 'john@examplecom',
+  workEmail: 'john@example.com',
   salary: 100000,
 };
