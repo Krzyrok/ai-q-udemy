@@ -1,6 +1,9 @@
 import { test, describe } from 'node:test';
 import assert from 'node:assert';
-import { checkPassword, checkPasswordAndThrowReason } from './passwordChecker.js';
+import {
+  checkPassword,
+  checkPasswordAndThrowReason,
+} from './passwordChecker.js';
 
 describe('checkPassword', () => {
   test('returns true for valid password', () => {
@@ -37,42 +40,57 @@ describe('checkPassword', () => {
 
 describe('checkPasswordAndThrowReason', () => {
   test('returns true for valid password', () => {
-    assert.strictEqual(checkPasswordAndThrowReason('ValidPass123'), true);
+    assert.strictEqual(checkPasswordAndThrowReason('ValidPass123@'), true);
   });
 
   test('throws for non-string input', () => {
     assert.throws(() => checkPasswordAndThrowReason(123), {
-      message: 'Password must be a string'
+      message: 'Password must be a string',
     });
   });
 
   test('throws for password shorter than 8 characters', () => {
     assert.throws(() => checkPasswordAndThrowReason('Short1A'), {
-      message: 'Password must be at least 8 characters long'
+      message: 'Password must be at least 8 characters long',
     });
   });
 
   test('throws for password longer than 20 characters', () => {
-    assert.throws(() => checkPasswordAndThrowReason('ThisPasswordIsWayTooLong123456'), {
-      message: 'Password must be at most 20 characters long'
-    });
+    assert.throws(
+      () => checkPasswordAndThrowReason('ThisPasswordIsWayTooLong123456'),
+      {
+        message: 'Password must be at most 20 characters long',
+      }
+    );
   });
 
   test('throws for password without lowercase letters', () => {
     assert.throws(() => checkPasswordAndThrowReason('PASSWORD123'), {
-      message: 'Password must contain at least one lowercase letter'
+      message: 'Password must contain at least one lowercase letter',
     });
   });
 
   test('throws for password without uppercase letters', () => {
     assert.throws(() => checkPasswordAndThrowReason('password123'), {
-      message: 'Password must contain at least one uppercase letter'
+      message: 'Password must contain at least one uppercase letter',
     });
   });
 
   test('throws for password without numbers', () => {
     assert.throws(() => checkPasswordAndThrowReason('PasswordNoNumbers'), {
-      message: 'Password must contain at least one number'
+      message: 'Password must contain at least one number',
+    });
+  });
+
+  test('throws for password without special characters', () => {
+    assert.throws(() => checkPasswordAndThrowReason('Password123'), {
+      message: 'Password must contain special character',
+    });
+  });
+
+  test('throws for password containing ! character', () => {
+    assert.throws(() => checkPasswordAndThrowReason('Password123@!'), {
+      message: 'Password cannot contain ! character',
     });
   });
 });

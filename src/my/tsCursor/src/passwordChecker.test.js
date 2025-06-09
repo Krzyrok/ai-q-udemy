@@ -6,7 +6,7 @@ import {
 } from './passwordChecker.js';
 
 test('checkPassword: valid password', () => {
-  assert.strictEqual(checkPassword('Valid123!'), true);
+  assert.strictEqual(checkPassword('Valid123@'), true);
 });
 
 test('checkPassword: non-string input', () => {
@@ -40,7 +40,7 @@ test('checkPassword: missing special character', () => {
 });
 
 test('checkPasswordAndThrowReason: valid password', () => {
-  assert.strictEqual(checkPasswordAndThrowReason('Valid123!'), true);
+  assert.strictEqual(checkPasswordAndThrowReason('Valid123@'), true);
 });
 
 test('checkPasswordAndThrowReason: non-string input', () => {
@@ -94,5 +94,12 @@ test('checkPasswordAndThrowReason: missing special character', () => {
   assert.throws(
     () => checkPasswordAndThrowReason('Valid1234'),
     /one special character/
+  );
+});
+
+test('checkPasswordAndThrowReason: password must not contain ! character', () => {
+  assert.throws(
+    () => checkPasswordAndThrowReason('Valid123@!'),
+    /must not contain ! character/
   );
 });
