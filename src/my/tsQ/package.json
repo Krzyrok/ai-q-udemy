@@ -1,14 +1,20 @@
 {
   "name": "tsq",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "test": "node --test",
-    "start": "node src/index.js"
+    "test": "npm run build && node --test dist/",
+    "start": "npm run build && node dist/index.js",
+    "build": "tsc",
+    "dev": "tsc --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  }
 }

@@ -1,4 +1,4 @@
-export function checkPassword(password) {
+export function checkPassword(password: unknown): boolean {
   if (typeof password !== 'string') {
     return false;
   }
@@ -26,7 +26,7 @@ export function checkPassword(password) {
   return true;
 }
 
-export function checkPasswordAndThrowReason(password) {
+export function checkPasswordAndThrowReason(password: unknown): boolean {
   if (typeof password !== 'string') {
     throw new Error('Password must be a string');
   }
