@@ -1,4 +1,4 @@
-export function checkPassword(password) {
+export function checkPassword(password: unknown) {
   if (typeof password !== 'string') return false;
   if (password.length < 8) return false;
   if (password.length > 20) return false;
@@ -9,7 +9,7 @@ export function checkPassword(password) {
   return true;
 }
 
-export function checkPasswordAndThrowReason(password) {
+export function checkPasswordAndThrowReason(password: unknown) {
   if (typeof password !== 'string')
     throw new Error('Password must be a string');
   if (password.length < 8)
