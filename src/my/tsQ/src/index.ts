@@ -1,3 +1,3 @@
-import { checkPasswordAndThrowReason } from './passwordChecker.js';
+import { checkPassword } from './passwordChecker.js';
 
-console.log(checkPasswordAndThrowReason('Aaaaaaadfljasdfiiasd'));
+console.log(checkPassword('Aaaaaaadfljasdfiiasd'));
