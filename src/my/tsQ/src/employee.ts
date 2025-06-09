@@ -1,4 +1,4 @@
-type Address = {
+export type Address = {
   city: string;
   country: string;
   state: string;
@@ -6,9 +6,9 @@ type Address = {
 };
 
 // template literal type for emails:
-type Email = `${string}@${string}.${string}`;
+export type Email = `${string}@${string}.${string}`;
 
-type Employee = {
+export type Employee = {
   name: string;
   age: number;
   address: Address;

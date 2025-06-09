@@ -1,12 +1,12 @@
-type Address = {
+export type Address = {
   street: string;
   city: string;
   state: string;
 };
 
-type Email = `${string}@${string}.${string}`;
+export type Email = `${string}@${string}.${string}`;
 
-type Employee = {
+export type Employee = {
   name: string;
   age: number;
   address: Address;
