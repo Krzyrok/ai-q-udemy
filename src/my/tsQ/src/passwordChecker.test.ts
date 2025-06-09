@@ -1,9 +1,6 @@
 import { test, describe } from 'node:test';
 import assert from 'node:assert';
-import {
-  checkPassword,
-  checkPasswordAndThrowReason,
-} from './passwordChecker.js';
+import { checkPassword, checkPasswordAndThrowReason } from './passwordChecker.js';
 
 describe('checkPassword', () => {
   test('returns true for valid password', () => {
